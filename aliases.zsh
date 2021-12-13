@@ -65,6 +65,6 @@ alias nah="git reset --hard && git clean -df"
 alias gs="git status"
 
 # Other
-alias aliases="cat ~/aliases.zsh | grep alias"
+alias aliases="cat $DOTFILES/aliases.zsh | grep alias"
 alias notes="cd ~/notes && code ."
 alias notes-save="git add . && git commit -m 'updated notes' && git push"
