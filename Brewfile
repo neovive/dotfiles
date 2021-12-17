@@ -4,7 +4,7 @@ tap 'homebrew/cask-fonts'
 tap 'homebrew/cask-versions'
 tap 'homebrew/bundle'
 tap 'nicoverbruggen/homebrew-cask'
-tap 'stripe/stripe-cli'
+# tap 'stripe/stripe-cli'
 
 # Binaries
 #brew 'awscli'
@@ -16,7 +16,7 @@ brew 'git'
 brew 'gnupg'
 brew 'grep'
 brew 'httpie'
-brew 'mackup'
+# brew 'mackup'
 brew 'pkg-config' # https://github.com/driesvints/dotfiles/issues/20
 brew 'stripe/stripe-cli/stripe'
 brew 'stripe/stripe-mock/stripe-mock'
@@ -31,7 +31,6 @@ brew 'gifsicle'
 
 # Development
 brew 'php'
-brew 'php@8.1'
 brew 'php@7.2'
 brew 'composer'
 brew 'imagemagick'
@@ -43,10 +42,9 @@ brew 'redis'
 
 # Apps
 cask '1password'
-cask 'discord'
 cask 'google-chrome'
 cask 'visual-studio-code'
-cask 'helo'
+cask 'discord'
 cask 'imageoptim'
 cask 'signal'
 cask 'tableplus'
@@ -58,8 +56,8 @@ cask 'witch'
 cask 'camtasia'
 cask 'snagit'
 cask 'appcleaner'
+cask 'helo'
 cask 'invoker'
-
 
 
 # Quicklook

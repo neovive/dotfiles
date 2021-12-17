@@ -30,27 +30,23 @@ brew bundle --file $DOTFILES/Brewfile
 mysql -u root -e "ALTER USER root@localhost IDENTIFIED WITH mysql_native_password BY 'password'; FLUSH PRIVILEGES;"
 
 # Install PHP extensions with PECL
-pecl install imagick redis swoole
+pecl install imagick redis
 
 # Install global Composer packages
-/usr/local/bin/composer global require laravel/installer laravel/valet beyondcode/expose
+/usr/local/bin/composer global require laravel/installer laravel/valet
 
 # Install Laravel Valet
 $HOME/.composer/vendor/bin/valet install
 
 # Create a Sites directory
-mkdir $HOME/Sites
-
-# Create sites subdirectories
-mkdir $HOME/Sites/blade-ui-kit
-mkdir $HOME/Sites/eventsauce
-mkdir $HOME/Sites/laravel
+mkdir $HOME/Projects
+mkdir $HOME/Training
 
 # Clone Github repositories
-$DOTFILES/clone.sh
+# $DOTFILES/clone.sh
 
 # Symlink the Mackup config file to the home directory
-ln -s $DOTFILES/.mackup.cfg $HOME/.mackup.cfg
+# ln -s $DOTFILES/.mackup.cfg $HOME/.mackup.cfg
 
 # Set macOS preferences - we will run this last because this will reload the shell
-source $DOTFILES/.macos
+#source $DOTFILES/.macos

@@ -2,10 +2,7 @@
 
 echo "Cloning repositories..."
 
-SITES=$HOME/Sites
-BLADE=$SITES/blade-ui-kit
-EVENTSAUCE=$SITES/eventsauce
-LARAVEL=$SITES/laravel
+SITES=$HOME/Projects
 
 # Personal
 git clone git@github.com:driesvints/driesvints.com.git $SITES/driesvints.com
