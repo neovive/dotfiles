@@ -1,10 +1,10 @@
 # Shortcuts
-#alias copyssh="pbcopy < $HOME/.ssh/id_ed25519.pub"
-alias showpublickey='cat ~/.ssh/id_rsa.pub'
-alias copyssh="pbcopy < ~/.ssh/id_rsa.pub"
+alias copyssh="pbcopy < $HOME/.ssh/id_ed25519.pub"
+#alias showpublickey='cat ~/.ssh/id_rsa.pub'
+#alias copyssh="pbcopy < ~/.ssh/id_rsa.pub"
 alias reloadshell="source $HOME/.zshrc"
 alias reloaddns="dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
-alias ll="/opt/homebrew/opt/coreutils/libexec/gnubin/ls -AhlFo --color --group-directories-first"
+alias ll="/opt/homebrew/opt/coreutils/libexec/gnubin/ls -AhlFot --color --group-directories-first"
 alias shrug="echo '¯\_(ツ)_/¯' | pbcopy"
 alias c="clear"
 alias compile="commit 'compile'"
@@ -17,7 +17,7 @@ alias library="cd $HOME/Library"
 alias sites="cd $HOME/Sites"
 alias lara="sites && cd laravel/"
 alias docs="lara && cd docs/"
-alias ll='ls -FGlAhp'
+# alias ll='ls -FGlAhp'
 alias ..="cd ../"
 alias ...="cd ../../"
 alias ....="cd ../../../"
@@ -68,3 +68,6 @@ alias gs="git status"
 alias aliases="cat $DOTFILES/aliases.zsh | grep alias"
 alias notes="cd ~/notes && code ."
 alias notes-save="git add . && git commit -m 'updated notes' && git push"
+
+#webp
+alias webp='f() { cwebp -q 70 $1 -o "${1%.*}.webp" };f'
