@@ -55,6 +55,7 @@ cask 'snagit'
 cask 'appcleaner'
 cask 'helo'
 cask 'invoker'
+cask 'monitorcontrol'
 
 
 # Quicklook
